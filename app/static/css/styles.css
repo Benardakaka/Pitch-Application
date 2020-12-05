@@ -1,0 +1,19 @@
+body{
+    overflow-x: hidden;
+}
+
+.back{
+    background-image: linear-gradient(-20deg, #d558c9 0%, #24d292 100%);
+    position: absolute;
+    top: 8%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+}
+
+.head{
+    font-size: 60px;
+
+}
+    
