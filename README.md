@@ -6,7 +6,7 @@
 * Link to live site: https://akakaben.herokuapp.com/
 
 ## Description
-This is a website application that allows user to read other peoples pitches and create their own. pitches. And they can also  post their comments for liking nor disliking the viewed..
+This is a website application that allows user to read other peoples pitches and create their own. pitches. And they can also  post their comments for liking nor disliking the viewed.
 
 ## User Stories
 The user would like to.... :
