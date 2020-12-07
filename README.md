@@ -28,7 +28,7 @@ The user would like to.... :
 
 * [Python3.6](https://docs.python.org/3/)
 * Flask
-* Boostrap
+* [Boostrap]
 
 
 ## Support and contact details
