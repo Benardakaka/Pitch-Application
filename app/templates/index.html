@@ -3,21 +3,25 @@
 <!-- Styles block -->
 
 {%block styles%}
-
-<link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright" rel="stylesheet">
-<link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+ <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
 {%endblock%}
 
 <!-- Content block -->
 {%block content%}
 
 <body>
-
-    <div class=back>
+ <div class="container">
+     <div class=back>
         <div class=" text-center " style="font-family: 'Indie Flower', cursive; color: #fff; padding: 55px 25px; ">
-            <h1 class="head"><strong>Welcome to the Best pitch</strong></h1>
+            <p>
+                <marquee behaviour="scroll" width="1000px" height="px" color="white" style="color: crimson;font-size: larger;"> 
+                    <strong><i><b>Hello, "Welcome to the Pitches ". by Benard Akaka</b></i></strong></marquee>
+                    <link rel="stylesheet" href="">
+            </p>
         </div>
         <hr>
         <br><br>
@@ -25,37 +29,37 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="well well-lg" style="text-align: center;">
-                        <h3>Interviews Pitches</h3>
+                        <h3 style="color: blue;">Interviews Pitches</h3>
                         <hr>
-                        <p>Essentially it’s a short summary about yourself and what you do, in an interview. </p>
-                            <a href="{{url_for('main.interview_pitches')}}" class="btn btn-info btn-center -center">Click to
-                            view</a>
+                        <p style="color: black;"><b><i>In the short summary,explain about yourself and what you do, in an interview.</i></b> </p>
+                            <a href="{{url_for('main.interview_pitches')}}" class="btn btn-info btn-center -center"><p><b>CLICK TO SEE</b></p></a>
                     </div>
                 </div>
                 <div class="col-md-4" style="text-align: center;">
                     <div class="well well-lg">
-                        <h3>Products Pitches</h3>
+                        <h3 style="color: blue;">Products Pitches</h3>
                         <hr>
-                        <p>Make it short. · Make it clear. · Explain who your customers are. · Explain the problem
-                            they're facing. </p>
-                        <a href="{{url_for('main.product_pitches')}}" class="btn btn-info -center">Click to view</a>
+                        <p style="color: black;"><b><i>Make sure you laugh. · Make it clear. · Explain who your customers are. · Explain the problem they're facing. </i></b></p>
+                        <a href="{{url_for('main.product_pitches')}}" class="btn btn-info -center"><p><b>CLICK TO SEE</b></p></a>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="well well-lg" style="text-align: center;">
-                        <h3>Promotion Pitches</h3>
+                        <h3 style="color: blue;">Promotion Pitches</h3>
                         <hr>
-                        <p>A sales pitch is a condensed sales presentation,a salesperson explains the nature and
-                            benefits of their business in less than one or two minutes.</p>
-                        <a href="{{url_for('main.promotion_pitches')}}" class="btn btn-info -center">Click to view</a>
+                        <p style="color: black;"><b><i>There's more than one way to do things. There's always different points of views and styles of pitching.</i></b></p>
+                        <a href="{{url_for('main.promotion_pitches')}}" class="btn btn-info -center"> <marquee behaviour="Slide"><p><b>CLICK TO SEE</b></p></marquee></a>
                     </div>
                 </div>
-            </div>
+                <br><br>
+            <div class="col-md-4" style="color: blue;text-align: center;">
+                    <div class="well well-lg" style="text-align: center;"><br><br><br>
+                 <div style="padding-bottom: 20px; text-align: center;"><a href="{{url_for('main.new_pitch')}}" class="btn btn-info btn-center"><p><b> CREATE A PITCH</b></p></a>
         </div>
-        <div style="padding-bottom: 20px; text-align: center;">
-            <a href="{{url_for('main.new_pitch')}}" class="btn btn-info btn-center">Click to create a pitch</a>
-        </div>
+     </div>
+     </div>
     </div>
 </body>
 
-{%endblock%}
+{%endblock%} 

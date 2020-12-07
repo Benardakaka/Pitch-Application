@@ -1,41 +1,41 @@
-<!-- <div class="navbar navbar-light" role="navigation" style="margin-bottom:0; border-bottom: 1px solid;"> -->
-    <nav class="navbar navbar-dark default-color">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="/" class="navbar-brand"><Strong>Best Pitches</Strong></a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="{{url_for('main.interview_pitches')}}">Interview</a></li>
-                    <li><a href="{{url_for('main.product_pitches')}}">Product</a></li>
-                    <li><a href="{{url_for('main.promotion_pitches')}}">Promotion</a></li>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="color: brown;background-color: blanchedalmond;">
+        <a class="navbar-brand" href="/">PITCH</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText" style="color:black;">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{url_for('main.interview_pitches')}}">Interview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{url_for('main.product_pitches')}}">Product</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="{{url_for('main.promotion_pitches')}}">Promotion</a>
+                </li>
                 </ul>
-    
                 <ul class="nav navbar-nav navbar-right">
                     {% if current_user.is_authenticated %}
                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                             aria-haspopup="true" aria-expanded="false">{{current_user.username| capitalize}} <span
                                 class="caret"></span></a>
                         <ul class="dropdown-menu ">
-                            <li><a href="{{url_for('main.profile',uname=current_user.username)}}">🤵 Profile</a></li>
+                            <li><a href="{{url_for('main.profile',uname=current_user.username)}}">Profile</a></li>
                             <hr>
                             <li><a href="{{url_for('main.user_pitches',uname=current_user.username)}}">📖 My Pitches</a></li>
                             <hr>
-                            <li><a href="{{url_for('auth.logout')}}">🙎‍♂️Sign out</a></li>
+                            <li><a href="{{url_for('auth.logout')}}">Sign out</a></li>
                         </ul>
                     </li>
                     {% else %}
-                    <li><a href="{{url_for('auth.login')}}">🙎‍♂️ Sign in</a></li>
+                    <li><a href="{{url_for('auth.login')}}"> Sign in</a></li>
                 </ul>
                 {%endif%}
-            </div>
+          
         </div>
-         </div>
-    </nav>
+      </nav>

@@ -1,3 +1,4 @@
 {
-    "python.linting.enabled": false
+    "python.linting.enabled": false,
+    "python.pythonPath": "/home/moringa/Documents/Pitches-Application/virtual/bin/python3.6"
 }

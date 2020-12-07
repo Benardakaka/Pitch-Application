@@ -1,5 +1,5 @@
 body{
-    overflow-x: hidden;
+    background-color: #d558c9;
 }
 
 .back{
@@ -16,4 +16,11 @@ body{
     font-size: 60px;
 
 }
-    
+   
+nav{
+    background-color: #d558c9;
+}
+
+nav{
+    text-align: center;
+}
