@@ -3,7 +3,7 @@
 #### Author: [Benard Akaka](https://github.com/Benardkakaka)
 
 
-* Link to live site: https://akakadee.herokuapp.com/
+* Link to live site: https://akakaben.herokuapp.com/
 
 ## Description
 This is a website application that allows user to read other peoples pitches and create their own. pitches. And they can also  post their comments for liking nor disliking the viewed.
